@@ -23,8 +23,6 @@ public class Main {
 
         System.out.println(digits.highAndLow("1 2 3 4 5")+"\n");
 
-
-
         Kata2nd strings = new Kata2nd();
 
     }

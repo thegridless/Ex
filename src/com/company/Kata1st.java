@@ -3,14 +3,14 @@ package com.company;
 import java.util.Arrays;
 
 public class Kata1st {
-    public static boolean isSquare(int n) { //You're a square! https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+    public static boolean isSquare(int n) { // https://www.codewars.com/kata/54c27a33fb7da0db0100040e
         if (Math.sqrt(n) % 1 == 0) {
             return true;
         }
         return false;
     }
 
-    public static int nbYear(int p0, double percent, int aug, int p) { //Growth of a Population https://www.codewars.com/kata/563b662a59afc2b5120000c6
+    public static int nbYear(int p0, double percent, int aug, int p) { // https://www.codewars.com/kata/563b662a59afc2b5120000c6
         int year = 0;
         while (p0 <= p) {
             p0 = (int) (p0 + ((percent / 100) * p0) + aug);
@@ -19,7 +19,7 @@ public class Kata1st {
         return year;
     }
 
-    public static int sumOfDifferences(int[] arr) { //Sum of differences in array https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e
+    public static int sumOfDifferences(int[] arr) { // https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e
         int s = 0;
         int sum = 0;
         for (int i = arr.length - 1; i > 0; i--) {
@@ -38,7 +38,7 @@ public class Kata1st {
         return sum;
     }
 
-    public static int digital_root(int n) { //Digital Root https://www.codewars.com/kata/541c8630095125aba6000c00
+    public static int digital_root(int n) { // https://www.codewars.com/kata/541c8630095125aba6000c00
         int[] b = new int[10];
         while (n / 10 != 0) {
             for (int i = 0; i < 10; i++) {
@@ -52,7 +52,7 @@ public class Kata1st {
         return n;
     }
 
-    public static int DRoot(int n) { //Digital Root рекурсия
+    public static int DRoot(int n) { //
         int[] b = new int[10];
 
         for (int i = 0; i < 10; i++) {
@@ -68,7 +68,7 @@ public class Kata1st {
         return n;
     }
 
-    public static double[] tribonacci(double[] s, int n) { //Tribonacci Sequence https://www.codewars.com/kata/556deca17c58da83c00002db
+    public static double[] tribonacci(double[] s, int n) { // https://www.codewars.com/kata/556deca17c58da83c00002db
         double[] answer = new double[n];
         double[] emptyArr = new double[0]; //пустой массив
 
@@ -92,14 +92,14 @@ public class Kata1st {
         return answer;
     }
 
-    public static int[] map(int[] arr) {
+    public static int[] map(int[] arr) { // https://www.codewars.com/kata/57f781872e3d8ca2a000007e
         for (int i=0; i<arr.length; i++){
             arr[i]*= 2;
         }
         return arr;
     }
 
-    public static int squareDigits(int n) {
+    public static int squareDigits(int n) { // https://www.codewars.com/kata/54c27a33fb7da0db0100040e
         String tempString = Integer.toString(n);
         int[] tempInt = new int[tempString.length()];
         String answer="";
@@ -110,7 +110,7 @@ public class Kata1st {
         return Integer.valueOf(answer);
     }
 
-    public static String highAndLow(String numbers) {
+    public static String highAndLow(String numbers) { // https://www.codewars.com/kata/554b4ac871d6813a03000035
         String[] stringNumbers = numbers.split(" ");
         int[] intNumbers = new int[stringNumbers.length];
         String answer = "";
