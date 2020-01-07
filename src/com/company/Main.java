@@ -25,6 +25,7 @@ public class Main {
 
         Kata2nd strings = new Kata2nd();
 
+
     }
 
 
